@@ -17,6 +17,7 @@ import demoImage2 from '../assets/images/demo-image-02.jpg';
 import bgMaster from '../assets/images/bg-masthead.jpg';
 import genHu from '../assets/images/genhuscreenshot.jpeg';
 import profilePic from '../assets/images/Taylor_Covington.jpeg';
+import ContactForm from '../components/contact-form/ContactForm';
 
 const IndexPage = () => (
   <Layout>
@@ -26,7 +27,7 @@ const IndexPage = () => (
       <div className="container d-flex h-100 align-items-center">
         <div className="mx-auto text-center">
           <h1 className="mx-auto my-0 text-uppercase">{config.heading}</h1>
-          <h2 className="text-white-50 mx-auto mt-2 mb-5">
+          <h2 className="text-black-100 mx-auto mt-2 mb-5">
             {config.subHeading}
           </h2>
           <Scroll type="id" element="about">
@@ -119,6 +120,7 @@ const IndexPage = () => (
     </section>
 
     <Subscribe />
+    {/* <ContactForm /> */}
 
     <SocialLinks />
     <Footer />
