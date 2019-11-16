@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import SocialLinks from '../components/SocialLinks';
 import Subscribe from '../components/Subscribe';
 import Header from '../components/Header';
+import StackItem from '../components/StackItem';
 
 import AddedFonts from '../assets/sass/added-fonts/AddedFonts.scss'
 
@@ -38,6 +39,10 @@ const IndexPage = () => (
         </div>
       </div>
     </header>
+
+  <section>
+    <StackItem />
+  </section>
 
     <section id="about" className="about-section text-center">
       <div className="container">
