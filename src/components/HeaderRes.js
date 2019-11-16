@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Scroll from './Scroll';
 import config from '../../config';
-import LogoIcon from './Logo';
+import Logo from '../assets/images/logo.png';
 import { Link } from 'gatsby';
 export default class Header extends Component {
   constructor(props) {
@@ -42,7 +42,6 @@ export default class Header extends Component {
         id="mainNav"
       >
         <div className="container">
-          {/* <LogoIcon /> */}
           <a className="navbar-brand" href="#page-top">
             {config.siteTitle}
           </a>
@@ -65,37 +64,20 @@ export default class Header extends Component {
           >
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="about"
-                >
-                  <a className="nav-link" href="#about">
-                    About
-                  </a>
-                </Scroll>
+              <Link className="nav-link" to="/">
+                    Home
+                  </Link>
               </li>
               <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="projects"
-                >
-                  <a className="nav-link" href="#projects">
+              <Link className="nav-link" to="/">
                     Projects
-                  </a>
-                </Scroll>
+                  </Link>
               </li>
               <li className="nav-item">
-                <Scroll
-                  onClick={_ => this.toggleMenu(!openMenu)}
-                  type="id"
-                  element="signup"
-                >
-                  <a className="nav-link" href="#signup">
+              <Link className="nav-link" to="/">
                     Contact
-                  </a>
-                </Scroll>
+                  </Link>
+                
               </li>
               <li className="nav-item">
               
